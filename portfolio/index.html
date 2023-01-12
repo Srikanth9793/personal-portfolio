@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/7b7cadfb3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header page -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Portfo<i>lio</i></a></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h2>Hey, I'm <span>Srikanth</span> <br>Pynaboina From <i class="India">India</i></h2>
+                
+            </div>
+        </div>
+    </div>
+        <!-- About page -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/02.JPG" alt="About me">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About me</h1>
+                        <p>I’m a full-stack developer with great experience and passion for coding and building plain interfaces. I have a manic
+                        love for great high-loaded projects. Plus, I’m an easy-going person and fit in any team. I work remotely and save your
+                        budget on my workplace. So, if you have a complicated task, you’ve found the right person.Having 2 Years of IT Experience in Software Development, Implementation, and
+                        Maintenance in projects using C#.NET, ASP.NET MVC, MVVM, SQL SERVER and
+                        other technologies </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- skills -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>Backend Development</span><br>API and Database development</li>
+                                <li><span>Dynamics AX</span><br>AX functionality </li>
+                                <li><span>Front end Development</span><br>Front end applications (end to end)</li>
+                            </ul>
+                        </div>
+                        <!-- Experience -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020-current</span><br>Full Stack Developer at HCL Technologies Limited</li>
+                                <li><span>2020</span><br>Internship at Ecommerce Logistics</li>
+                            </ul>
+                        </div>
+                        <!-- Education -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2014</span><br>Bhashyam public school. Andhra Pradesh</li>
+                                <li><span>2014-2016</span><br>Sneha Junior college, Andhra Pradesh</li>
+                                <li><span>2016-2020</span><br>Bachelor's in Madanapalle institute of technology & science, Andhra Pradesh </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet  Web   development can range from developing a simple single static page of plain text to complex web
+                        applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web
+                        development commonly refers, may include Web engineering, Web design, Web content development, client liaison,
+                        client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Web_development">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Backend Development</h2>
+                        <p>Back-end development means working on server-side software, which focuses on everything you can’t see on a website.
+                        Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application
+                        programming interface (APIs), architecture, and servers.
+                        </p>
+                        <a href="https://www.coursera.org/articles/back-end-developer">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>User experience design (UX design, UXD, UED, or XD) is the process of defining the experience a user would go through
+                        when interacting with a digital product or website. Design decisions in UX design are often driven by research, data
+                        analysis, and test results rather than aesthetic preferences and opinions. Unlike user interface design, which focuses
+                        solely on the design of a computer interface, UX design encompasses all aspects of a user's perceived experience with a
+                        product or website
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/User_experience_design">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------Portfolio------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/car.jpg" alt="">
+                        <div class="layer">
+                            <h3 class="heading">Car Resale web Application</h3>
+                            <P>In this application, end user can sell his old and the same user can buy second hand car</P>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/pet1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Pet store Application</h3>
+                            <P>To select the pets and book your liked pets in online pet store application</P>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/university.jpg" alt="">
+                        <div class="layer">
+                            <h3>University Blog</h3>
+                            <P>University site application, where student can explore all the course and fee structure</P>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn"><i class="fa-sharp fa-solid fa-arrow-right"></i>See More</a>
+            </div>
+        </div>
+
+        <!--contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>srikanthgoud9793@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7093533764</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100007231383407"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https:twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/sri_pandu_sri/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/srikanth-sree-87987321a/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Srikanth_Resume_updated.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required/>
+                            <input type="email" name="email" placeholder="Your email" required/>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>Copyright @Srikanth portfolio <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+        <script>
+            var sidemenu = document.getElementById('sidemenu');
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
+                }
+        </script>
+</body>
+</html>
